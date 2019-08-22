@@ -31,7 +31,7 @@
     </div>
 
     <div class="col-12 mt-4 text-center">
-      <form class="px-5">
+      <form class="px-5" id="login-form">
         <div class="row form-group">
           <div class="col-12">
             <div class="form-input-login">
@@ -65,7 +65,7 @@
         <div class="row form-group">
           <div class="col-12">
               <a href="welcome.html">
-                <button class="btn btn-warning btn-login" wisth="100%">
+                <button type="submit" class="btn btn-warning btn-login" wisth="100%">
                   <label class="font-weight-bold text-16 mb-0 text-white">LOGIN</label>
                 </button>
               </a>
@@ -80,6 +80,25 @@
       </div>
     </div>
 </div>
+
+<script>
+  $('.btn-login').on('submit', function(){
+    $.ajax({
+      type: "post",
+      url: "http://localhost/unmerbaya-alumni/Unmer/login",
+      cache: false,
+      data: $(this).serialize(),
+      dataType: "json",
+      success: function(data){
+
+      },
+      error: function() {
+
+      }
+    });
+    return false;
+  });
+</script>
 
 </body>
 </html>
