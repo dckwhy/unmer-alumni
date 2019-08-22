@@ -1,0 +1,73 @@
+/* font size */
+.text-12{
+	font-size:12px;
+}
+.text-14{
+	font-size:14px;
+}
+.text-15{
+	font-size:15px;
+}
+.text-16{
+	font-size:16px;
+}
+.text-17{
+	font-size:17px;
+}
+.text-18{
+	font-size:19px;
+}
+.text-19{
+	font-size:19px;
+}
+.text-20{
+	font-size:20px;
+}
+.text-24{
+	font-size: 24px;
+}
+.text-40{
+	font-size:40px;
+}
+.form-control.login{
+	border-radius: 35px;
+	border: none;
+}
+.full-width{
+	width:100%;
+}
+.btn {
+	border-radius: 35px;
+	width: 100%;
+}
+
+.container-login{
+	margin-top:100px;
+}
+.version-bottom{
+	margin-top:80px;
+}
+.login-icon{
+	margin-top:3px;
+	width:22px;
+	height:22px;
+}
+.form-input-login{
+	border-radius: 35px;
+	border: none;
+	background-color: #ffffff;
+}
+.bulat-orange{
+	margin-top:3px;
+	height: 30px;
+	width:30px;
+	background-color: orange;
+	border-radius: 20px;
+}
+.btn-login{
+	border-radius: 30px !important;
+}
+.welcome-next{
+	border-radius: 10px !important;
+	width: 50%;
+}
