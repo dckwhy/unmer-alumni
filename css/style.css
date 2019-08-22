@@ -1,4 +1,16 @@
 /* font size */
+.text-8{
+	font-size:8px;
+}
+.text-9{
+	font-size:9px;
+}
+.text-10{
+	font-size:10px;
+}
+.text-11{
+	font-size:11px;
+}
 .text-12{
 	font-size:12px;
 }
@@ -28,6 +40,9 @@
 }
 .text-40{
 	font-size:40px;
+}
+.text-orange{
+	color:orange;
 }
 .form-control.login{
 	border-radius: 35px;
@@ -69,5 +84,96 @@
 }
 .welcome-next{
 	border-radius: 10px !important;
-	width: 50%;
+	width: 50% !important;
+}
+.popup-yesno{
+	border-radius: 10px !important;
+	width: 100%;
+}
+
+/* modal */
+.top-content-style{
+	width: 100%;
+	background-color: white;
+}
+.modal-content{
+	padding-bottom : 10px;
+}
+
+.sub-main-w3 {
+	margin: 1.5vw 5vw;
+}
+.bg-content-w3pvt {
+	max-width: 400px;
+	margin: 0 auto;
+	background: #fff;
+	text-align: center;
+}
+.bg-orange{
+	background-color: #FBC403;
+}
+.modal-dialog{
+	margin-top: 180px !important;
+	border-radius: 30px;
+}
+
+/* dashboard  */
+.dashboard{
+	margin-top: 55px;
+}
+.box-nav{
+	height: 35px;
+	width: 35px;
+	background-color: #FBC403;
+	border-radius: 12px;
+}
+.box-white-nav{
+	height: 35px;
+	width: 120%;
+	background-color:white;
+	border-radius: 25px;
+	box-shadow : 0px 1px 5px darkgray;
+}
+.foto-mini{
+	height:28px;
+	width:28px;
+	border-radius: 15px;
+	border: 2px solid orange;
+}
+.box-news{
+	background-color: white;
+	box-shadow : 0px 1px 5px darkgray;
+	width: 100%;
+	height: auto;
+}
+.icon-list{
+	height: 25px;
+	width:25px;
+}
+.foto-ava-news{
+	height:40px;
+	width:40px;
+	border-radius: 30px;
+	border: none;	
+}
+.foto-content{
+	width: 100%;
+	height: auto;
+	padding:0 !important;
+}
+.icon-action{
+	height: 20px;
+	width: 20px;
+}
+.icon-close{
+	width: 12px;
+	height: 12px;
+}
+
+.saran{
+	margin-top:55px;
+}
+.saran .form-control{
+	border-radius: 10px !important;
+	font-size: 11px;
 }
