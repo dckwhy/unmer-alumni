@@ -177,3 +177,9 @@
 	border-radius: 10px !important;
 	font-size: 11px;
 }
+
+.modal-red{
+	background-color:#f34573;
+	border-radius: 20px;
+	border: 2px solid #b40a37  ;
+}

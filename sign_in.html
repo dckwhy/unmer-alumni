@@ -9,6 +9,18 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
   <link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css" />
   <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.wmuSlider.js"></script>
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/aos.js"></script>
 </head>
 <style>
   body{
@@ -65,7 +77,7 @@
         <div class="row form-group">
           <div class="col-12">
               <a href="welcome.html">
-                <button type="submit" class="btn btn-warning btn-login" wisth="100%">
+                <button type="submit" class="btn btn-warning btn-login" width="100%">
                   <label class="font-weight-bold text-16 mb-0 text-white">LOGIN</label>
                 </button>
               </a>
@@ -79,9 +91,26 @@
         <p class="font-weight-light text-14 text-center text-white">Teras Kampus © 2019<br> V.1.0</p>
       </div>
     </div>
+
+    <!-- popup failed -->
+    <div class="modal fade modal-notif" id="modal-failed" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog px-3">
+          <div class="modal-red px-2 py-2 text-center">
+              <p class="text-18 text-white font-weight-bold">Login Failed!</p>
+              <p class="text-16 text-white">Please Check your username and password! </p>
+          </div>
+          </div>
+      </div>
+    </div>
+
 </div>
 
 <script>
+
+  function failed(){
+    $("#modal-failed").modal('show');
+  }
+
   $('.btn-login').on('submit', function(){
     $.ajax({
       type: "post",
@@ -93,7 +122,7 @@
 
       },
       error: function() {
-
+        $('#modal-failed').modal('show');
       }
     });
     return false;
